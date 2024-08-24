@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CameraCTRL : MonoBehaviour
 {
-    private Vector3 cameraOriginPoint;
+    private Vector3 mouseOriginPoint;
     private Vector3 offset;
     private bool dragging;
     
@@ -13,19 +13,23 @@ public class CameraCTRL : MonoBehaviour
 
         if (Input.GetMouseButton(2))
         {
-            offset = ();
+            offset = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position);
+            if(!dragging)
+            {
+                dragging = true;
+                mouseOriginPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            }
+        }
+        else
+        {
+            dragging = false;
+        }
+
+        if (dragging)
+        {
+            // script component is on Camera so there is no need for Camera.main.transform.position
+            transform.position = mouseOriginPoint - offset;
         }
     }
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
