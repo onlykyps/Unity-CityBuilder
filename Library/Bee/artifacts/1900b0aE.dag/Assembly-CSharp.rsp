@@ -387,6 +387,7 @@
 "Assets/Scripts/Builder.cs"
 "Assets/Scripts/CameraCTRL.cs"
 "Assets/Scripts/City.cs"
+"Assets/Scripts/UI_Controller.cs"
 -langversion:9.0
 /deterministic
 /optimize+

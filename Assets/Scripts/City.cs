@@ -25,12 +25,15 @@ public class City : MonoBehaviour
 
     public int[] buildingCounts = new int[3];
 
+    public UI_Controller uiController;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Cash = 100000;
         Food = 6;
         JobsCeiling = 10;
+        uiController = GetComponent<UI_Controller>();
     }
 
     public void EndTurn()
@@ -41,6 +44,8 @@ public class City : MonoBehaviour
         CalculateFood();
         CalculateCash();
         Debug.Log("Day ended.");
+        uiController.UpdateCityData();
+        uiController.UpdateDayCount();
         Debug.LogFormat
         ("Jobs: {0}/{1}, Cash:{2}, Pop:{3}/{4}, Food{5}",
         JobsCurrent, JobsCeiling, Cash, PopulationCurrent, PopulationCeiling, Food);
