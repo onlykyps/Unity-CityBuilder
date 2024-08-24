@@ -1583,6 +1583,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1639924359}
+  - component: {fileID: 1639924360}
   m_Layer: 0
   m_Name: City
   m_TagString: Untagged
@@ -1605,6 +1606,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1639924360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639924358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeba5a57d516eac4b97407eb411169be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingCounts: 000000000000000000000000
 --- !u!1 &1759047163
 GameObject:
   m_ObjectHideFlags: 0
@@ -1805,7 +1819,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1783758124}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: aeba5a57d516eac4b97407eb411169be, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: 
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: EndTurn
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1783758124
 MonoBehaviour:
   m_ObjectHideFlags: 0
