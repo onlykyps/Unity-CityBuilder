@@ -23,7 +23,7 @@ public class City : MonoBehaviour
     public int JobsCeiling {get; set;}
     public float Food {get; set;}
 
-    public int[] buildingCounts = new int[3];
+    public int[] buildingCounts = new int[4];
 
     public UI_Controller uiController;
 

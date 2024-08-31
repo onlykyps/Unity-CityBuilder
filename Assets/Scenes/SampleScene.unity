@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 3654565}
   - component: {fileID: 3654564}
   - component: {fileID: 3654563}
+  - component: {fileID: 3654566}
   m_Layer: 5
   m_Name: Factory
   m_TagString: Untagged
@@ -251,6 +252,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3654561}
   m_CullTransparentMesh: 0
+--- !u!114 &3654566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3654561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d51340f38ae404a973158ff87458ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 3
+  cost: 50
+  buildingName: Factory
 --- !u!1 &563267610
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,8 +618,8 @@ Transform:
 --- !u!1 &808734574
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1668326362392362803, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
+  m_PrefabInstance: {fileID: 6279751525049145848}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -612,6 +628,7 @@ GameObject:
   - component: {fileID: 808734576}
   - component: {fileID: 808734575}
   - component: {fileID: 808734579}
+  - component: {fileID: 808734580}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -622,8 +639,8 @@ GameObject:
 --- !u!65 &808734575
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7858970259369112302, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
+  m_PrefabInstance: {fileID: 6279751525049145848}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808734574}
   m_Material: {fileID: 0}
@@ -643,8 +660,8 @@ BoxCollider:
 --- !u!23 &808734576
 MeshRenderer:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8743368776653582701, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
+  m_PrefabInstance: {fileID: 6279751525049145848}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808734574}
   m_Enabled: 1
@@ -688,16 +705,16 @@ MeshRenderer:
 --- !u!33 &808734577
 MeshFilter:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3658327639269942678, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
+  m_PrefabInstance: {fileID: 6279751525049145848}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808734574}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &808734578
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2437930313677243183, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
+  m_PrefabInstance: {fileID: 6279751525049145848}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808734574}
   serializedVersion: 2
@@ -711,8 +728,8 @@ Transform:
 --- !u!114 &808734579
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4496898151979669874, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
+  m_PrefabInstance: {fileID: 6279751525049145848}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808734574}
   m_Enabled: 1
@@ -720,10 +737,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc72edaa66d4ef348a13e98c36f540b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  city: {fileID: 0}
-  uiController: {fileID: 0}
-  buildings: []
-  board: {fileID: 0}
+  city: {fileID: 1639924360}
+  uiController: {fileID: 1639924361}
+  buildings:
+  - {fileID: 1931394684}
+  - {fileID: 1614490674}
+  - {fileID: 974838270}
+  - {fileID: 3654566}
+  board: {fileID: 808734580}
+--- !u!114 &808734580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808734574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 569bea1ca7c84fb4db30315ee2aca1fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &828745199
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,6 +978,7 @@ GameObject:
   - component: {fileID: 974838269}
   - component: {fileID: 974838268}
   - component: {fileID: 974838267}
+  - component: {fileID: 974838270}
   m_Layer: 5
   m_Name: Farm
   m_TagString: Untagged
@@ -1066,6 +1100,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 974838265}
   m_CullTransparentMesh: 0
+--- !u!114 &974838270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974838265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d51340f38ae404a973158ff87458ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 2
+  cost: 35
+  buildingName: Farm
 --- !u!1 &1110009415
 GameObject:
   m_ObjectHideFlags: 0
@@ -1506,6 +1555,7 @@ GameObject:
   - component: {fileID: 1614490673}
   - component: {fileID: 1614490672}
   - component: {fileID: 1614490671}
+  - component: {fileID: 1614490674}
   m_Layer: 5
   m_Name: House
   m_TagString: Untagged
@@ -1627,6 +1677,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1614490669}
   m_CullTransparentMesh: 0
+--- !u!114 &1614490674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614490669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d51340f38ae404a973158ff87458ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 1
+  cost: 25
+  buildingName: House
 --- !u!1 &1639924358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1701,6 +1766,8 @@ GameObject:
   - component: {fileID: 1759047165}
   - component: {fileID: 1759047167}
   - component: {fileID: 1759047168}
+  - component: {fileID: 1759047169}
+  - component: {fileID: 1759047170}
   m_Layer: 5
   m_Name: City
   m_TagString: Untagged
@@ -1806,6 +1873,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!114 &1759047169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759047163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeba5a57d516eac4b97407eb411169be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingCounts: 000000000000000000000000
+  uiController: {fileID: 1639924361}
+--- !u!114 &1759047170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759047163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da215d90997480b45976c0eae65f555e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dayText: {fileID: 0}
+  cityText: {fileID: 0}
 --- !u!1 &1783758121
 GameObject:
   m_ObjectHideFlags: 0
@@ -2030,6 +2125,7 @@ GameObject:
   - component: {fileID: 1931394683}
   - component: {fileID: 1931394682}
   - component: {fileID: 1931394681}
+  - component: {fileID: 1931394684}
   m_Layer: 5
   m_Name: Road
   m_TagString: Untagged
@@ -2125,7 +2221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 87a47a38b69814b4cb2e7f6d9c396e90, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2151,6 +2247,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931394679}
   m_CullTransparentMesh: 0
+--- !u!114 &1931394684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931394679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d51340f38ae404a973158ff87458ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+  cost: 5
+  buildingName: Road
 --- !u!1 &2033778904
 GameObject:
   m_ObjectHideFlags: 0
@@ -2344,6 +2455,82 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe2c3889d9c35264fb1677819fc23e1f, type: 3}
+--- !u!1001 &6279751525049145848
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1668326362392362803, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
+      propertyPath: m_Name
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 2437930313677243183, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2437930313677243183, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2437930313677243183, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2437930313677243183, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2437930313677243183, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2437930313677243183, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2437930313677243183, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2437930313677243183, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2437930313677243183, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2437930313677243183, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496898151979669874, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
+      propertyPath: 'buildings.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1931394684}
+    - target: {fileID: 4496898151979669874, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
+      propertyPath: 'buildings.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1614490674}
+    - target: {fileID: 4496898151979669874, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
+      propertyPath: 'buildings.Array.data[2]'
+      value: 
+      objectReference: {fileID: 974838270}
+    - target: {fileID: 4496898151979669874, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
+      propertyPath: 'buildings.Array.data[3]'
+      value: 
+      objectReference: {fileID: 3654566}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1668326362392362803, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 808734580}
+  m_SourcePrefab: {fileID: 100100000, guid: 3eeeab157c45f814c8686f26ddc339e3, type: 3}
 --- !u!1001 &7237453921733912557
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2467,7 +2654,7 @@ SceneRoots:
   - {fileID: 8376988102942979812}
   - {fileID: 2188203150241628060}
   - {fileID: 705507995}
-  - {fileID: 808734578}
+  - {fileID: 6279751525049145848}
   - {fileID: 828745203}
   - {fileID: 563267613}
   - {fileID: 2747534384824925057}
