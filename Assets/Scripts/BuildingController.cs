@@ -6,7 +6,7 @@ public class BuildingController : MonoBehaviour
     [SerializeField]
     private City city;
     [SerializeField]
-    private UIController uiController;
+    private UI_Controller uiController;
     [SerializeField]
     private Building[] buildings;
     [SerializeField]

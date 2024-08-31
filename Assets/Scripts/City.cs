@@ -62,6 +62,10 @@ public class City : MonoBehaviour
         Cash +=JobsCurrent * 2;
     }
 
+    public void DepositCash(int cash)
+    {
+        Cash += cash;
+    }
     void CalculateFood()
     {
         Food += buildingCounts[1] * 4f;
