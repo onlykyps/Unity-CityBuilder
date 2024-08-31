@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\UI_Controller.cs" />
     <Compile Include="Assets\Scripts\Builder.cs" />
     <Compile Include="Assets\Scripts\CameraCTRL.cs" />
+    <Compile Include="Assets\Scripts\Board.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
