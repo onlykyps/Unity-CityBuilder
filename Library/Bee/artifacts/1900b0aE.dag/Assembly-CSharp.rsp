@@ -386,6 +386,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.13f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Scripts/Board.cs"
 "Assets/Scripts/Builder.cs"
+"Assets/Scripts/BuildingController.cs"
 "Assets/Scripts/CameraCTRL.cs"
 "Assets/Scripts/City.cs"
 "Assets/Scripts/UI_Controller.cs"
